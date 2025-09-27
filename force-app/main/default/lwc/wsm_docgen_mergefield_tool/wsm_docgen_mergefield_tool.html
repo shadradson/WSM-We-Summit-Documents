@@ -1,0 +1,24 @@
+<template>
+    <div class="followpage">
+        <div >
+            <h2 class="wsm_h2">We Summit Documents</h2>
+            <h2 class="wsm_h2">Merge Field Tool</h2>
+            <h3 class="wsm_h3">Click below to copy merge field to clipboard.</h3>
+            <lightning-input onchange={searchMergest} name="search" type="text" label="Search for specific merge field." value=""></lightning-input>
+            
+        </div>
+        <div class="wsm_button_group">
+            <template for:each={AllMergeFields} for:item="Merge">
+                <div class="wsm_button" data-apiname={Merge.apiName} data-mergetxt={Merge.mergetxt} key={Merge.apiName} onclick={copyMerge}>
+                    <span class="wsm_mergetitle" data-apiname={Merge.apiName} data-mergetxt={Merge.mergetxt} >
+                        {Merge.label}
+                    </span>
+                    <span class="wsm_mergevalue" data-apiname={Merge.apiName} data-mergetxt={Merge.mergetxt} >
+                        {Merge.mergetxt}
+                    </span>
+                </div>
+            </template>
+        </div>
+        <input type="text" class="wsm_noseeum" value={textToCopy} data-hidden-input />
+    </div>
+</template>

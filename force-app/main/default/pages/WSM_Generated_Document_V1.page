@@ -1,0 +1,80 @@
+<apex:page standardController="WSM_Generated_Document__c" renderAs="advanced_pdf" showHeader="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false">
+  <!-- renderAs="advanced_pdf" -->
+
+
+<head>
+    <style>
+        @page {
+          margin-top  :-8px;
+          margin-left: -8px;
+          margin-right: -8px;
+          margin-bottom: -10px;
+
+         }
+        body {font-family:sans-serif;}
+        h1, h2, h3, h4 {margin: 0;}
+        .apexDefaultPageBlock {background-color: transparent !important;}
+        .apexp {
+            background-image: URL('https://wesummitmountains2023.file.force.com/servlet/servlet.ImageServer?id=015Hs000004m4UG&amp;oid=00DHs000000QWEF&amp;lastMod=1686369574000') !important;
+            background-position: 110% 110%;
+            background-size: 33%;
+            background-repeat: no-repeat;
+          }
+          .splash {
+            background-image:URL('https://wesummitmountains2023.file.force.com/servlet/servlet.ImageServer?id=015Hs000004mXOt&amp;oid=00DHs000000QWEF&amp;lastMod=1689559657000');
+            background-size: 100%;
+            background-origin: center;
+            background-repeat:no-repeat;
+          }
+          
+
+          /*---------- Standard tags ----------*/
+          .fullWidth {  width:100%;} 
+          .bgColor1 {  background-color:#036588;} 
+          .bgWhite { background-color: #fff;}
+          .textCenter {  text-align:center;} 
+          .textWhite {  color:#fff;}
+        .fontSizeRegular {font-size:10px;}
+        .fontFamilyRegular {font-family:arial unicode ms,sans-serif;}
+        .fontBold {font-weight:700;}
+        .px10Padding {padding: 10px;}
+        .sigTableCell {border-bottom: 3px solid #fff;width:385px;padding-left:10px;padding-top:5px;padding-bottom:5px;}
+        .rightBoarder {border-right: 3px solid #fff;}
+        /*---------- Overcoming Errors ----------*/
+        span, p, a, strong {background-color:transparent!important;}
+        td {padding:0!important;}
+        /*---------- WSM CSS ----------*/
+        .wsm_head_outer {}
+        .wsm_foot_outer p {margin:0 !important;}
+        .wsm_page_break {page-break-after:always;}
+        .wsm_8pad_inner {padding:8px;}
+        {!WSM_Generated_Document__c.CSS_Input__c}
+    </style>
+    <apex:stylesheet value="{!WSM_Generated_Document__c.CSS_Input__c}"/>
+</head>
+<!--|||||||||| HEADER AND FOOTER |||||||||
+<div class="headerBox">
+
+</div>
+<div class="footer">
+  <div style="padding:10px;width:100%;">
+    <div style="padding-right:10px;float:left;font-size:1rem;font-weight:700;width:780px;text-align:right;">
+      TOGETHER, WE SUMMIT MOUNTAINS
+    </div>
+  </div>
+</div>-->
+
+<!--|||||||||| BODY OF THE PAGES |||||||||-->
+
+
+
+
+<!--apex:pageBlock -->
+<apex:outputText value="{!WSM_Generated_Document__c.Body1__c}" escape="false" ></apex:outputText>
+<!--/apex:pageBlock-->
+
+
+ 
+
+             
+</apex:page>

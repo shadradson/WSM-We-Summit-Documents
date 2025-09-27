@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Template_Footer_On_This_Section__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This will use the template footer on the bottom of this generated section.
+Note that this works best when the page breaks after this section.</description>
+    <inlineHelpText>This will use the template footer on the bottom of this generated section.
+Note that this works best when the page breaks after this section.</inlineHelpText>
+    <label>Use Template Footer On This Section</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

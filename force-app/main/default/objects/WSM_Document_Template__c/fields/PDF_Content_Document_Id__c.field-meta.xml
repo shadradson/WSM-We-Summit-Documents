@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PDF_Content_Document_Id__c</fullName>
+    <description>The Content Document Id used to store the PDF used in this document Template.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Content Document Id used to store the PDF used in this document Template.</inlineHelpText>
+    <label>PDF Content Document Id</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

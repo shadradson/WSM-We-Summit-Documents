@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Template_Render_Type__c</fullName>
+    <label>Template Render Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>WSM Declarative Generation Templates</fullName>
+                <default>false</default>
+                <label>WSM Declarative Generation Templates</label>
+            </value>
+            <value>
+                <fullName>PDF Field Filler</fullName>
+                <default>false</default>
+                <label>PDF Field Filler</label>
+            </value>
+            <value>
+                <fullName>Word Document Replacement Tool</fullName>
+                <default>false</default>
+                <label>Word Document Replacement Tool</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

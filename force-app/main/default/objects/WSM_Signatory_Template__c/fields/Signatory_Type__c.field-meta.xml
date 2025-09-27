@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Signatory_Type__c</fullName>
+    <description>SF Person Record can be any Salesforce Person Record. It can be a Lead, Contact, User. This can be a merge field from the record generating the document.
+
+Static Name and Email will always go to that person.</description>
+    <inlineHelpText>SF Person Record can be any Salesforce Person Record. It can be a Lead, Contact, User. This can be a merge field from the record generating the document.
+
+Static Name and Email will always go to that person.</inlineHelpText>
+    <label>Signatory Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SF Person Record</fullName>
+                <default>false</default>
+                <label>SF Person Record</label>
+            </value>
+            <value>
+                <fullName>Static Name and Email</fullName>
+                <default>false</default>
+                <label>Static Name and Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

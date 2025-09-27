@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Break_Page_After_Section__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Check this for the document to break to the next page after this section.</description>
+    <inlineHelpText>Check this for the document to break to the next page after this section.</inlineHelpText>
+    <label>Break Page After Section?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

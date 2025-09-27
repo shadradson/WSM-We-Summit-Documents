@@ -1,0 +1,12 @@
+<template><div class="slds-m-around_small">
+    <div class="wsm_allcenter">
+        <c-wsm_docgen_esign_signature enable-name-signing="false" name-input-label="Type name here:" enable-signature-drawing="true" pad-label="Sign Here:" stroke-thickness="3" pen-color="black" pad-color="white" font="30px 'Arial'">
+        </c-wsm_docgen_esign_signature>
+    </div>
+    <div class="slds-m-top_small wsm_allcenter">
+        <lightning-button variant="brand" label="Save And Continue" title="Save" onclick={saveSignature}></lightning-button>
+        <lightning-button variant="brand" label="Clear" title="Clear" onclick={clearSignature} class="slds-m-left_x-small"></lightning-button>
+    </div>
+
+</div>
+</template>

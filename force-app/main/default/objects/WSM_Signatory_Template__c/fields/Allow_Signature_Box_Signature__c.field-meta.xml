@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_Signature_Box_Signature__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This will allow the client to sign with the signature box which saves an image of their signature input by their mouse or finger from their device.</description>
+    <inlineHelpText>This will allow the client to sign with the signature box which saves an image of their signature input by their mouse or finger from their device.</inlineHelpText>
+    <label>Allow Signature Box Signature</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

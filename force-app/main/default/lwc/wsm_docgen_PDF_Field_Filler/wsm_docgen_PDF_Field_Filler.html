@@ -1,0 +1,28 @@
+<template>
+	<div>
+		<div class="wsm_working_box">
+			<p>V2 WORKING: {ProgressBarStatus}</p>
+			<lightning-progress-bar variant="circular" value={ProgressBarPercent} size="large"></lightning-progress-bar>
+		</div>
+	</div>
+	
+	<div class="margerine_top">
+		<template if:true={showdownloadlink}>
+			<div class="optionbuttons_container">
+				<a class="download_button" href={downloadProcessedPDFHREF}>Download Only</a>
+				<div lwc:if={ShowSavedMessage}>
+					<span>This PDF has been saved to record.</span>
+				</div>
+				<div lwc:else>
+					<lightning-button variant="brand" label="Save To Record" title="Save" onclick={savePDFToRecord}></lightning-button>
+				</div>
+			</div>
+		</template>
+	</div>
+	
+	<div class="margerine_top">
+		<template if:true={ShowNextButton}>
+			<lightning-button variant="brand" label="Continue" title="Continue" onclick={navigateNext}></lightning-button>
+		</template>
+	</div>
+</template>

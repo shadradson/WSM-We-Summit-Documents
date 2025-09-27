@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#036588</headerColor>
+        <logo>WSDocuments_Logo_Only</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>WE SUMMIT DOCUMENTS</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>WSM_Document_Template__c</tabs>
+    <tabs>WSM_Generated_Document__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>WE_SUMMIT_DOCUMENTS_UtilityBar</utilityBar>
+</CustomApplication>

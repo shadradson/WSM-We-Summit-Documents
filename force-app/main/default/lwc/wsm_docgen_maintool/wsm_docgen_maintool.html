@@ -1,0 +1,9 @@
+<template>
+    <div class="wsm_working_box">
+        <p>WORKING: {ProgressBarMessage}</p>
+        <lightning-progress-bar variant="circular" value={ProgressBarPercent} size="large"></lightning-progress-bar>
+    </div>
+    <div class="wsm_button_box" lwc:if={ShowNext}>
+        <lightning-button variant="Brand" label="Generate PDF" onclick={handleGoNextController}></lightning-button>
+    </div>
+</template>

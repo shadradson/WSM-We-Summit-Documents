@@ -1,0 +1,97 @@
+.wsm_outer {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #3b3b3b;
+    gap: 0.25rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.singlefield {
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    gap: 0.1rem;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.header_token_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+.header_token_box > h5 {
+    font-weight: 700;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    background-color: #fff;
+
+}
+
+.inputrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.inputrow>* {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+.rowitem {
+    word-break: break-word;
+}
+.rowitem>span {
+    font-size: 14px;
+    word-break: break-word;
+    font-weight: 700;
+}
+.buttons {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>> Options <<<<<<<<<<<<<<<<<<<<<<<<<*/
+.optionslist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+span.optionspan {
+    padding: 0.25rem;
+    background-color: #ffffffaa;
+    border-radius: 0.25rem;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>> Colors of specific Types <<<<<<<<<<<<<<<<<<<<<<<<<*/
+.Checkbox {
+    background-color: #f2ffba;
+}
+.SignatureBox {
+    background-color: #9efcab;
+}
+.Unknown {
+    background-color: #fd9c9c;
+}
+.Picklist {
+    background-color: #9ec2f8;
+}
+.OptionsList {
+    background-color: #ddaef8;
+}
+.RadioGroup {
+    background-color: #ffa5da;
+}
+.Text {
+    background-color: #d5dcff;
+}

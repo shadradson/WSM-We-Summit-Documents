@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Footer_Height_px__c</fullName>
+    <defaultValue>40</defaultValue>
+    <description>This is manual height adjustment for the header. This must be in pixels. Default height is 40px.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is manual height adjustment for the header. This must be in pixels. Default height is 40px.</inlineHelpText>
+    <label>Footer Height (px)</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location_Search_Keyword__c</fullName>
+    <description>The keyword to search the PDF for placement of this signature.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The keyword to search the PDF for placement of this signature.</inlineHelpText>
+    <label>Location Search Keyword</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

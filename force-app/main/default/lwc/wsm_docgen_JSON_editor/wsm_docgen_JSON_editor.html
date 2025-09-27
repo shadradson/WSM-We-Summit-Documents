@@ -1,0 +1,81 @@
+<template>
+    <div class="buttons">
+        <lightning-button data-function="new" variant="destructive" label="Upload A New File And Re-Do JSON Mapping"
+            title="Upload A New File And Re-Do JSON" onclick={navigateNext}></lightning-button>
+        <lightning-button data-function="newkeep" variant="destructive" label="Upload A New File But Keep JSON Mapping"
+            title="Upload A New File But Keep JSON Mapping" onclick={navigateNext}></lightning-button>
+        <lightning-button data-function="fill" variant="brand-outline" label="Fill Dummy Data" title="Fill Dummy Data"
+            onclick={fillDummyData}></lightning-button>
+        <lightning-button data-function="save" variant="brand" label="Update JSON with Changes"
+            title="Upload A New File And Re-Do JSON" onclick={navigateNext}></lightning-button>
+    </div>
+    <div class="wsm_outer">
+        <!--template for:each={WorkingObject2} for:item="field">
+            <div class="singlefield" data-bgcolor={field.DeepFieldType} key={field.Name}>{field.Name}</div></template-->
+        <template for:each={WorkingObject2} for:item="field">
+            <div class="singlefield" data-bgcolor={field.DeepFieldType} key={field.Name}>
+
+                <!-- 
+                        Name: field.getName(),
+                        FieldType: currentfieldtype,
+                        DeepFieldType: currentfielddeeptype["DeepType"],
+                        Options: currentfielddeeptype["Options"],
+                        UserNote: "",
+                        IncData: currentfielddeeptype["InitialValue"],
+        -->
+                <div class="inputrow">
+                    <div class="rowitem">
+                        <lightning-input data-field={field.Name} data-type="name" onchange={updateJSON} name="name" type="text" label="Field Name (Change with caution)" value={field.Name}></lightning-input>
+                        <div class="header_token_box">
+                            <h5>Order In PDF: {field.OriginalOrder}</h5>
+                            <h5>Type: {field.FieldType} - {field.DeepFieldType}</h5>
+                            <lightning-input data-field={field.Name} data-type="skip" onchange={updateJSON} name="skip"
+                                type="checkbox" label="Skip Filling Field" checked={field.skip}></lightning-input>
+                                <lightning-helptext content="Check this checkbox to skip filling this specific field when processing the pdf."></lightning-helptext>
+                        </div>
+                        <div lwc:if={field.settings.skip}>
+
+                        </div>
+                        <div lwc:else>
+                            <div lwc:if={field.settings.istextfield}>
+                                <lightning-input data-field={field.Name} data-type="note" onchange={updateJSON}
+                                    name="Notes" type="text" label="Notes about Field"
+                                    value={field.UserNote}></lightning-input>
+                                <lightning-input data-field={field.Name} data-type="data" onchange={updateJSON}
+                                    name="Data" type="text" label="Field Value (or Merge)"
+                                    value={field.IncData}></lightning-input>
+                                    <lightning-input data-field={field.Name} data-type="signature" onchange={updateJSON} name="signature" type="checkbox" label="This is a Signature Field" checked={field.signature}></lightning-input>
+                                <lightning-helptext content="Check this checkbox to make this a signature field. This will have a different font."></lightning-helptext>
+                            </div>
+                            <div lwc:if={field.settings.ischkfield}>
+                                <lightning-input data-field={field.Name} data-type="note" onchange={updateJSON}
+                                    name="Notes" type="text" label="Notes about Field"
+                                    value={field.UserNote}></lightning-input>
+                                <lightning-radio-group label="Field Fill Behavior" options={chkoptions}
+                                    value={field.UserSettings} data-type="usersettings" data-field={field.Name}
+                                    type="radio" onchange={updateJSON}></lightning-radio-group>
+                                <lightning-input data-field={field.Name} data-type="data" onchange={updateJSON}
+                                    name="Data" type="text" label="Field Value (or Merge)"
+                                    value={field.IncData}></lightning-input>
+                            </div>
+                            <div lwc:if={field.settings.ispickfield}>
+                                <span>Options in Picklist Are:</span>
+                                <div class="optionslist">
+                                    <template for:each={field.Options} for:item="opt">
+                                        <span key={opt} class="optionspan">{opt}</span>
+                                    </template>
+                                </div>
+                                <lightning-input data-field={field.Name} data-type="note" onchange={updateJSON}
+                                    name="Notes" type="text" label="Notes about Field"
+                                    value={field.UserNote}></lightning-input>
+                                <lightning-input data-field={field.Name} data-type="data" onchange={updateJSON}
+                                    name="Data" type="text" label="Field Value (or Merge)"
+                                    value={field.IncData}></lightning-input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

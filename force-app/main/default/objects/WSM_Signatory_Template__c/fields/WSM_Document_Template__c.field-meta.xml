@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WSM_Document_Template__c</fullName>
+    <description>The template this signatory will sign for.</description>
+    <inlineHelpText>The template this signatory will sign for.</inlineHelpText>
+    <label>WSM Document Template</label>
+    <referenceTo>WSM_Document_Template__c</referenceTo>
+    <relationshipName>Signatories</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

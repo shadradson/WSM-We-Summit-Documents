@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+     <masterLabel>WSM Docgen Main Tool</masterLabel>
+    <description>We Summit Document Generation</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets='lightning__FlowScreen'>
+            <!--propertyType name='PT' extends='SObject' label='Select a Object' description='Select a Object'/-->
+            <!--property name='IncProjects' type='@salesforce/schema/Project__c[]' label='Projects' description='Select Record Collection Variable of Projects'/-->
+            <property name='IncDocumentTemplate' type='@salesforce/schema/WSM_Document_Template__c' label='' description='Input the single Document Template Record'/>
+            <property name='IncDocumentTemplateSections' type='@salesforce/schema/WSM_Document_Section__c[]' label='Document Template Sections' description='Select Record Collection Variable of Document Sections related to the document template'/>
+            <property name='IncRecordId' type='String' label='Record Id' description='The record Id of the record to generate the document template from.'/>
+            <property name='IncWSMDocGenRecordId' type='String' label='WSM Document Generation Record Id' description='The record Id of the record to hold the data from the generation.'/>
+            <property name='IncObjectApiName' type='String' label='Object Api Name' description='The API Name of the object to generate the document template on.'/>
+            </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

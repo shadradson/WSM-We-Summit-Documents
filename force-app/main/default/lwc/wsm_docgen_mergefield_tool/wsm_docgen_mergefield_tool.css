@@ -1,0 +1,43 @@
+.wsm_button {
+    padding: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.wsm_button:hover {
+    background-color: #eee;
+    
+}
+
+span.wsm_mergetitle {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 1rem 0 0;
+}
+input.wsm_noseeum {
+    height: 1px;
+    opacity: 0;
+}
+
+.wsm_button_group {
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+.followpage {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+
+
+/*---------- Text Stuff ----------*/
+h2.wsm_h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+h3.wsm_h3 {
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+}

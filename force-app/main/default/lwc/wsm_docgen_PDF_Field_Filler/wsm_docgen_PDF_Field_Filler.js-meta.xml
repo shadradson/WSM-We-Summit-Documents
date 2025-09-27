@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+     <masterLabel>WSM Docgen PDF Field Filler V2</masterLabel>
+    <description>We Summit Document Generation PDF Field Filler.</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets='lightning__FlowScreen'>
+            <!--propertyType name='PT' extends='SObject' label='Select a Object' description='Select a Object'/-->
+            <!--property name='IncProjects' type='@salesforce/schema/Project__c[]' label='Projects' description='Select Record Collection Variable of Projects'/-->
+            <property name='IncDocumentTemplate' type='@salesforce/schema/WSM_Document_Template__c' label='Document Template Record' description='Input the single Document Template Record'/>
+            <property name='IncSignatures' type='@salesforce/schema/WSM_Signature__c[]' label='Signed Signatures Collection' description='A collection of signatures to be placed on the PDF'/>
+            <property name='recordId' type='String' label='ID of Record to fill PDF from.' description='Input as string'/>
+            <property name='FlattenFormInput' type='Boolean' label='Flatten Form on Generate' description='This will collapse all of the form fields and make them uneditable after generating the document.'/>
+            <property name='autoRunMultipleFlowScreens' type='Boolean' label='Auto Save to Record and Navigate on Complete' description='LWC automatically saves PDF to a record, and navigates to the next flow screen on completion. Use for multi template looping.'/>
+            <property name='GeneratedDocumentName' type='String' label='Generated PDF File Name' description='This is a string which is the filled PDF Name (do not add the .pdf to the end.)'/>
+            
+            </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

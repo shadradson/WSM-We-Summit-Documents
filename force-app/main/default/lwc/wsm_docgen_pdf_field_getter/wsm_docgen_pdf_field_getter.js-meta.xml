@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>WSM Docgen Get Fields From PDF</masterLabel>
+    <description>We Summit Document Generation tool for extracting pdf fields</description>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets='lightning__FlowScreen'>
+            <property name='IncDocumentTemplate' type='@salesforce/schema/WSM_Document_Template__c' label='' description='Input the single Document Template Record'/>
+            <property name='contentDocumentId' type='String' label='Inc PDF Content Document Id from Document Template' description='Input as string'/>
+            <property name='OutJSON' type='String' label='JSON Output for new document template.' description='This will output the JSON used for mapping an input PDF. This can have merge fields added to it to use later when rendering a template.'/>
+            </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

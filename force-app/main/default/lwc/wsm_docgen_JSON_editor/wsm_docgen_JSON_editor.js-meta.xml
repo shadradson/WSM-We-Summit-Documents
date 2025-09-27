@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>WSM Docgen JSON Editor Tool</masterLabel>
+    <description>We Summit Document Generation tool for editing PDF Mapping JSON</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets='lightning__FlowScreen'>
+            <property name='IncJSON' type='String' label='Input JSON to Edit' description=''/>
+            <property name='OutJSON' type='String' label='Edited JSON can be accessed here' description=''/>
+            <property name='OutNavigateFunction' type='String' label='Which Navigation Function Pressed?' description=''/>
+            </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

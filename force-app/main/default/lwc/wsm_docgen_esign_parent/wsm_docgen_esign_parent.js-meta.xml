@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+     <masterLabel>WSM Docgen E-signature Tool</masterLabel>
+    <description>We Summit Document Generation Esignature, Document Signature Tool</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets='lightning__FlowScreen'>
+            <!--propertyType name='PT' extends='SObject' label='Select a Object' description='Select a Object'/-->
+            <!--property name='IncProjects' type='@salesforce/schema/Project__c[]' label='Projects' description='Select Record Collection Variable of Projects'/-->
+            <property name='IncWSMDocGenRecordId' type='String' label='WSM Document Generation Record Id' description='The record Id of the record to hold the data from the generation.'/>
+            </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
