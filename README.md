@@ -1,6 +1,9 @@
 # We Summit Documents by We Summit Mountains
 
-## To deploy:
+## To Deploy EASY:
+[Click Here](https://githubsfdeploy.herokuapp.com/app/githubdeploy/shadradson/WSM-Record-Collection-to-CSV-LWC)
+
+## To Deploy and Modify:
 1. Fork this Repo
 2. Connect to the Sandbox or Production/Developer Org that you want to deploy to.
 3. Deploy Manifest to ORG
