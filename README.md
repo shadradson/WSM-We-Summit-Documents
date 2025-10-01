@@ -1,7 +1,8 @@
 # We Summit Documents by We Summit Mountains
 
 ## To Deploy EASY:
-[Click Here](https://githubsfdeploy.herokuapp.com/app/githubdeploy/shadradson/WSM-We-Summit-Documents)
+[Click Here](https://githubsfdeploy.herokuapp.com?owner=shadradson&repo=WSM-We-Summit-Documents)
+
 
 ## To Deploy and Modify:
 1. Fork this Repo
